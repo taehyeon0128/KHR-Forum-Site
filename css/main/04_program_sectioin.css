@@ -2,14 +2,12 @@
 .program-slider-container {
   width: 1316px;
   margin: 0 auto; /* 가운데 정렬 */
-  padding: 40px 0;
   background-color: #f8f9fa;
 }
 
 /* ✅ 개별 프로그램 필드 */
 .program-section {
   margin-bottom: 40px;
-  padding: 20px;
   background: white;
   border-radius: 10px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -63,44 +61,49 @@
 
 /* ✅ 프로그램 정보 */
 .program-info {
-  padding: 10px;
+  
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  gap: 4px; /* 🔹 기존보다 조정된 gap */
 }
 
 /* ✅ 프로그램 제목 */
 .program-title {
+  margin:0;
   font-size: 18px; /* 🔹 기존보다 커진 제목 */
   font-weight: bold;
 }
 
 /* ✅ 프로그램 카테고리 */
 .program-category {
+  margin:0;
   font-size: 14px;
   color: gray;
 }
 
 /* ✅ 프로그램 설명 */
 .program-summary {
+  margin:0;
   font-size: 16px;
   color: #333;
 }
 
 /* ✅ 날짜 & 시간 */
 .program-date {
+  margin:0;
   font-size: 14px;
   color: #007bff;
 }
 
 .program-time {
+  margin:0;
   font-size: 14px;
   color: #007bff;
 }
 
 /* ✅ 비용 */
 .program-cost {
+  margin:0;
   font-size: 16px;
   font-weight: bold;
   color: #28a745;
