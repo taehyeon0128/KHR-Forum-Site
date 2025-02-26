@@ -1,0 +1,107 @@
+/* ✅ 프로그램 섹션 컨테이너 (1316px 고정) */
+.program-slider-container {
+  width: 1316px;
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+/* ✅ 개별 프로그램 필드 */
+.program-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ 필드 제목 */
+.program-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* ✅ 스크롤 가능 컨테이너 */
+.program-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+/* ✅ 프로그램 트랙 */
+.program-track {
+  display: flex;
+  gap: 16px; /* 카드 간격 조정 */
+}
+
+/* ✅ 개별 카드 (너비 220px, 높이 줄이기) */
+.program-card {
+  width: 220px;
+  height: 380px; /* 🔹 기존 440px → 380px로 축소 */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.program-card:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ 프로그램 이미지 (220x220, 유지) */
+.program-image {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ✅ 프로그램 정보 */
+.program-info {
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* 🔹 기존보다 조정된 gap */
+}
+
+/* ✅ 프로그램 제목 */
+.program-title {
+  font-size: 18px; /* 🔹 기존보다 커진 제목 */
+  font-weight: bold;
+}
+
+/* ✅ 프로그램 카테고리 */
+.program-category {
+  font-size: 14px;
+  color: gray;
+}
+
+/* ✅ 프로그램 설명 */
+.program-summary {
+  font-size: 16px;
+  color: #333;
+}
+
+/* ✅ 날짜 & 시간 */
+.program-date {
+  font-size: 14px;
+  color: #007bff;
+}
+
+.program-time {
+  font-size: 14px;
+  color: #007bff;
+}
+
+/* ✅ 비용 */
+.program-cost {
+  font-size: 16px;
+  font-weight: bold;
+  color: #28a745;
+}

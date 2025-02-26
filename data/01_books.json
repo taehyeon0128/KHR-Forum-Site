@@ -1,0 +1,20 @@
+[
+  {
+    "topic": "책 제목 1",
+    "image": "assets/images/book_img0.jpg",
+    "category": "#소설",
+    "link": "#"
+  },
+  {
+    "topic": "책 제목 2",
+    "image": "assets/images/book_img1.jpg",
+    "category":"#비즈니스",
+    "link": "#"
+  },
+  {
+    "topic": "책 제목 3",
+    "image": "assets/images/book_img0.jpg",
+    "category": "#자기계발",
+    "link": "#"
+  }
+]

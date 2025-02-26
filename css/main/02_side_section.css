@@ -1,0 +1,200 @@
+.side-content {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  width: 206px;
+  height: 621px;
+  gap: 16px;
+}
+
+.result-content,
+.book-content,
+.quick-content {
+  width: 206px;
+  border-radius: 20px;
+  border: 2px solid #ccc; /* ✅ 콘텐츠 구분 */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* ✅ 입체적인 느낌 추가 */
+}
+
+/* ✅ result-content 스타일 */
+.result-content {
+  height: 182px; /* ✅ 고정된 크기 */
+  display: flex; /* ✅ 내부 콘텐츠 정렬 */
+  background: #00b3b3;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* ✅ 내부 콘텐츠 넘칠 경우 숨김 */
+}
+
+/* 슬라이더 컨테이너 (사이드 콘텐츠 영역) */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+/* 슬라이드 트랙: 슬라이드들이 일렬로 배치됨 */
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* 개별 슬라이드 */
+.slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* 페이지네이션 컨테이너 */
+.pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+/* ✅ 페이지네이션 버튼 크기 수정 */
+.pagination .dot {
+  width: 8px !important;
+  height: 8px !important;
+  background: rgba(0, 0, 0, 0.5)!important;/* ✅ 반투명한 검정색으로 변경 */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* ✅ 활성화된 버튼 스타일 */
+.pagination .dot.active {
+  background: #2F2F2F!important;
+  transform: scale(1.2);
+}
+//신간도서 슬라이드 
+.book-content {
+  background: #2F2F2F !important; /* ✅ 배경색 변경 (기본 흰색에서 연한 회색으로) */
+  width: 206px;
+  height: 307px; /* ✅ 크기 고정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* ✅ 내부 요소 배치 정리 */
+  overflow: hidden;
+}
+
+/* ✅ 제목 스타일 */
+.book-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333; /* ✅ 제목 색상 변경 */
+  background: rgba(255, 255, 255, 0.7); /* ✅ 배경을 약간 투명한 흰색으로 설정 */
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 2; /* ✅ 이미지 위로 배치 */
+  position: relative;
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-image img {
+  max-width: 90%;
+  max-height: 180px; /* ✅ 높이 제한 */
+  object-fit: contain; /* ✅ 비율 유지하며 조정 */
+  display: block;
+}
+
+
+/* ✅ 카테고리 텍스트 스타일 */
+.book-category {
+  font-size: 14px;
+  color: gray;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* ✅ quick-content 스타일 */
+.quick-content {
+  width: 206px;
+  height: 124px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  background: #ff9800; /* 기본 배경색 */
+}
+
+/* ✅ 슬라이드 트랙 */
+.quick-content .slider-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* ✅ 개별 슬라이드 */
+.quick-content .slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ✅ 링크 스타일 */
+.quick-slide-link {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ✅ 공통 스타일 */
+.quick-content button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ✅ hover 효과 */
+.quick-content button:hover {
+  background: rgba(255, 255, 255);
+}
+
+/* ✅ 이전 버튼 (◀) */
+.prev-quick {
+  left: 5px;
+}
+
+/* ✅ 다음 버튼 (▶) */
+.next-quick {
+  right: 5px;
+}

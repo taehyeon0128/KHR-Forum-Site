@@ -1,0 +1,12 @@
+[
+  {
+      "title": "KHR포럼 2025 이벤트",
+      "image": "assets/images/KHR_banner1.jpg",
+      "link": "https://example.com/event"
+  },
+  {
+      "title": "AI 인공지능 HR 컨설팅",
+      "image": "assets/images/KHR_banner2.jpg",
+      "link": "https://example.com/ai-hr"
+  }
+]

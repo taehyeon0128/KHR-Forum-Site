@@ -1,0 +1,129 @@
+.main-section {
+  display: flex;
+  width: 1316px;
+  height: 621px;
+  gap: 16px;
+  margin: 90px auto 20px;
+}
+
+.main-content {
+  display: flex;
+  position: relative;
+  width: 1094px;
+  height: 621px;
+  border-radius: 30px 30px 0 30px;
+  overflow: hidden;
+}
+.overlay-text {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  z-index: 2;
+}
+
+.main-content-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* 부모 컨테이너 */
+.rounded-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 60px;
+  background: white;
+  border-radius: 30px 0 0 0;
+  display: flex;            /* 텍스트와 버튼 수평 배치 */
+  align-items: center;      /* 세로 중앙 정렬 */
+  justify-content: center;  /* 가로 중앙 정렬 */
+  gap: 10px;                /* 텍스트와 버튼 사이 간격 */
+  padding: 15px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+.rounded-div{
+  display: flex;            /* 텍스트와 버튼 수평 배치 */
+  align-items: center;      /* 세로 중앙 정렬 */
+  justify-content: center;  /* 가로 중앙 정렬 */
+  gap: 10px;                /* 텍스트와 버튼 사이 간격 */
+}
+/* 텍스트 */
+.rounded-text {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;              /* 기본 텍스트 색상 */
+  transition: color 0.3s ease;
+  cursor: pointer; /* 마우스 포인터 표시 */
+}
+
+/* 동그란 버튼 */
+.rounded-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000;         /* 기본 배경색: 검정 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* 화살표 표시를 위해 화살표 문자 사용 */
+  color: #fff;              /* 화살표 색상: 흰색 */
+  font-size: 16px;          /* 화살표 크기 */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 화살표: 유니코드 또는 다른 화살표 기호 사용 가능 */
+.rounded-button::before {
+  content: '→';
+}
+
+/* 부모에 hover 시, 텍스트와 버튼 모두 스타일 변경 */
+.rounded-div:hover .rounded-text {
+  color: #005f99;         /* 텍스트 색상 변경 */
+}
+
+.rounded-div:hover .rounded-button {
+  background: #005f99;  /* 버튼 배경색 변경 */
+  color: #fff;              /* 화살표 색상 유지(흰색) */
+}
+
+
+
+/* ✅ 30x30 크기의 피자 조각 (박스 위쪽 오른쪽 끝) */
+.rounded-box::before {
+  content: "";
+  position: absolute;
+  top: -30px; /* 박스의 위쪽에 위치 */
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 0 0 30px 0; /* 4사분면 (오른쪽 아래만 둥글게) */
+  background: transparent; /* ✅ 안쪽을 투명하게 */
+  box-shadow: 10px 10px 0 10px white; /* ✅ 바깥쪽을 흰색으로 */
+}
+
+/* ✅ 30x30 크기의 피자 조각 (박스의 왼쪽 아래 끝) */
+.rounded-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -30px; /* 박스의 왼쪽 아래에 위치 */
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 0 0 30px 0; /* 3사분면 (왼쪽 아래만 둥글게) */
+  background: transparent; /* ✅ 안쪽을 투명하게 */
+  box-shadow: 10px 10px 0 10px white; /* ✅ 바깥쪽을 흰색으로 */
+}
