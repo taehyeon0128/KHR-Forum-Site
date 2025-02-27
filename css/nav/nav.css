@@ -109,8 +109,7 @@
   
   /* 드롭다운 내부 메뉴: 각 버튼의 크기를 균일하게 설정 */
   .nav-dropdown-menu li {
-    /* 예제에서는 각 버튼을 150px 고정 너비로 설정 */
-    flex: 0 0 80px;
+    flex: 0 0 100px;
     text-align: center;
     margin: 0 10px; /* 버튼 간 간격 */
   }

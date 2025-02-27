@@ -20,6 +20,43 @@
     "cost": "50,000원"
   },
   {
+    "field": "Who Am I",
+    "title": "자아 발견 세미나",
+    "square_image": "assets/images/programs/whoami2.jpg",
+    "category": ["심리학", "상담"],
+    "summary": "자신을 돌아보는 질문과 토론을 기반으로 한 세미나",
+    "date": "2024-06-22",
+    "time": "10:00 - 16:00",
+    "cost": "50,000원"
+  },{
+    "field": "Who Am I",
+    "title": "자아 발견 세미나",
+    "square_image": "assets/images/programs/whoami2.jpg",
+    "category": ["심리학", "상담"],
+    "summary": "자신을 돌아보는 질문과 토론을 기반으로 한 세미나",
+    "date": "2024-06-22",
+    "time": "10:00 - 16:00",
+    "cost": "50,000원"
+  },{
+    "field": "Who Am I",
+    "title": "자아 발견 세미나",
+    "square_image": "assets/images/programs/whoami2.jpg",
+    "category": ["심리학", "상담"],
+    "summary": "자신을 돌아보는 질문과 토론을 기반으로 한 세미나",
+    "date": "2024-06-22",
+    "time": "10:00 - 16:00",
+    "cost": "50,000원"
+  },{
+    "field": "Who Am I",
+    "title": "자아 발견 세미나",
+    "square_image": "assets/images/programs/whoami2.jpg",
+    "category": ["심리학", "상담"],
+    "summary": "자신을 돌아보는 질문과 토론을 기반으로 한 세미나",
+    "date": "2024-06-22",
+    "time": "10:00 - 16:00",
+    "cost": "50,000원"
+  },
+  {
     "field": "Business Leadership",
     "title": "리더십 개발 과정",
     "square_image": "assets/images/programs/leadership1.jpg",

@@ -14,7 +14,13 @@
   {
     "topic": "책 제목 3",
     "image": "assets/images/book_img0.jpg",
-    "category": "#자기계발",
+    "category": "#자기개발",
+    "link": "#"
+  },
+  {
+    "topic": "책 제목 3",
+    "image": "assets/images/book_img0.jpg",
+    "category": "#자기개발",
     "link": "#"
   }
 ]

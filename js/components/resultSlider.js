@@ -24,7 +24,7 @@ export function initResultSlider() {
         },
         data: [
             { title: "KHR포럼", description: "누적 고객 10,000명 달성!", background: "#005f99" },
-            { title: "2025년 00월 KHR 칼럼", description: "HR 환경 변화 분석", background: "#00b3b3", link: "https://blog.naver.com/yourBlog" }
+            { title: "ChatGPT <br> HR 챗봇", description: "GPTs 에릭", background: "#00b3b3", link: "https://blog.naver.com/yourBlog" }
         ]
     });
     resultSlider.init();
