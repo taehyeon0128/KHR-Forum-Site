@@ -5,30 +5,11 @@
   gap: 16px;
 }
 
-.result-content,
-.book-content,
-.quick-content {
-  width: 206px;
-  border-radius: 20px;
-}
-
-/* ✅ result-content 스타일 */
-.result-content {
-  height: 206px; 
-  display: flex;
-  position:relative;
-  overflow:hidden;
-  background: #005f99;
-  color: white;
-  text-align: center;
-}
-
 
 /* 슬라이더 컨테이너 (사이드 콘텐츠 영역) */
 .slider-container {
   position: relative;
   overflow: hidden;
-  border: 1px solid #ccc;
 }
 
 /* 슬라이드 트랙: 슬라이드들이 일렬로 배치됨 */
@@ -36,25 +17,17 @@
   display: flex;
   transition: transform 0.4s ease;
 }
-.result-slide {
-  padding: 0px;
-  margin:0px;
-}
-.result-content h1  {
-  margin: 5px;
-}
-.result-text{
-  text-size:20px;
-}
 
 /* 개별 슬라이드 */
 .slide {
+  flex: 0 0 100%;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; box-sizing: border-box;
   padding: 10px;
 }
+
 
 /* 페이지네이션 컨테이너 */
 .pagination {
@@ -82,57 +55,102 @@
   background: #2F2F2F!important;
   transform: scale(1.2);
 }
+/*사이드 콘텐츠 내부*/
 
-//신간도서 슬라이드 
-.book-content {
-  background: #2F2F2F !important; /* ✅ 배경색 변경 (기본 흰색에서 연한 회색으로) */
+.result-content,
+.insight-content,
+.quick-content {
   width: 206px;
-  height: 259px; /* ✅ 크기 고정 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative; /* ✅ 내부 요소 배치 정리 */
-  overflow: hidden;
+  overflow:hidden;
+  border-radius: 20px;
 }
 
-/* ✅ 제목 스타일 */
-.book-title {
-  font-size: 16px;
-  font-weight: bold;
+/* ✅ result-content 스타일 */
+.result-content {
+  height: 206px; 
+  display: flex;
+  position:relative;
+  overflow:hidden;
+  background: #ff9800;
+  color: white;
   text-align: center;
-  margin-bottom: 10px;
-  color: #333; /* ✅ 제목 색상 변경 */
-  background: rgba(255, 255, 255, 0.7); /* ✅ 배경을 약간 투명한 흰색으로 설정 */
-  padding: 5px 10px;
-  border-radius: 5px;
-  z-index: 2; /* ✅ 이미지 위로 배치 */
+}
+.result-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 20px; /* ✅ 슬라이드 개별 요소에도 border-radius 적용 */
+  overflow: hidden; /* ✅ 불필요한 요소 잘림 방지 */
+}
+
+.insight-content {
+  background-color: #F3F3F3;
+  height: 259px;
+  display: flex; /* ✅ flex 유지 */
+  align-items: flex-start; /* ✅ 내부 요소 세로 정렬 */
+  justify-content: flex-start; /* ✅ 내부 요소 가로 정렬 */
   position: relative;
 }
 
-.book-image {
+.insight-content .slider-track {
+  display: flex; /* ✅ 슬라이드가 가로로 배치됨 */
+  flex-direction: row; /* ✅ 기본 값 유지 (가로 슬라이드) */
+  transition: transform 0.4s ease-in-out;
   width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.book-image img {
-  max-width: 90%;
-  max-height: 180px; /* ✅ 높이 제한 */
-  object-fit: contain; /* ✅ 비율 유지하며 조정 */
-  display: block;
+.insight-slide {
+  display: flex; /* ✅ flex 사용 */
+  flex-direction: column; /* ✅ 내부 요소 세로 배치 */
+  align-items: flex-start; /* ✅ 내부 요소를 왼쪽 정렬 */
+  justify-content: flex-start; /* ✅ 내부 요소를 위쪽 정렬 */
+  text-align: left; /* ✅ 내부 텍스트도 왼쪽 정렬 */
+  padding: 15px;
+  width: 100%; /* ✅ 슬라이드 너비 유지 */
 }
 
+.insight-title-box {
+  display: inline-block; /* ✅ 크기 조절 가능하도록 변경 */
+  background-color: #005f99;
+  color: white;
+  border-radius: 8px;
+  padding: 6px 12px;
+  text-align: left;
+  margin-bottom: 8px; /* ✅ 간격 조절 */
+}
 
-/* ✅ 카테고리 텍스트 스타일 */
-.book-category {
+.insight-title {
+  font-size: 16px;
+  text-align: left;
+}
+
+.insight-description {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 6px 0;
+  text-align: left;
+}
+
+.insight-category {
   font-size: 14px;
-  color: gray;
-  margin-top: 5px;
-  text-align: center;
+  color: #007bff;
+  font-weight: bold;
+  text-align: left;
 }
+
+.insight-category span {
+  background: #e3f2fd;
+  color: #e2e2e2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+
 
 /* ✅ quick-content 스타일 */
 .quick-content {

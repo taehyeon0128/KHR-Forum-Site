@@ -1,26 +1,24 @@
 [
   {
     "topic": "책 제목 1",
-    "image": "assets/images/book_img0.jpg",
+    "description": "책에 대한 설명",
     "category": "#소설",
     "link": "#"
   },
   {
-    "topic": "책 제목 2",
-    "image": "assets/images/book_img1.jpg",
-    "category":"#비즈니스",
+    "topic": "책 제목 1",
+    "description": "책에 대한 설명",
+    "category": "#소설",
     "link": "#"
-  },
-  {
-    "topic": "책 제목 3",
-    "image": "assets/images/book_img0.jpg",
-    "category": "#자기개발",
+  },{
+    "topic": "책 제목 1",
+    "description": "책에 대한 설명",
+    "category": "#소설",
     "link": "#"
-  },
-  {
-    "topic": "책 제목 3",
-    "image": "assets/images/book_img0.jpg",
-    "category": "#자기개발",
+  },{
+    "topic": "책 제목 1",
+    "description": "책에 대한 설명",
+    "category": "#소설",
     "link": "#"
   }
 ]
