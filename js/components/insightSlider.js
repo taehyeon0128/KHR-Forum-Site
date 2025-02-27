@@ -1,8 +1,8 @@
 import { CustomSlider } from '../modules/slider.js';
 
-export async function initBookSlider() {
+export async function initInsightSlider() {
     try {
-        const response = await fetch('data/01_books.json');
+        const response = await fetch('data/01_insights.json');
         if (!response.ok) throw new Error("JSON 데이터를 불러올 수 없습니다.");
         const bookData = await response.json();
             

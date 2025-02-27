@@ -15,7 +15,7 @@ export class CustomSlider {
         this.data = options.data ?? [];
         this.renderSlide = options.renderSlide;
 
-        this.currentIndex = this.loop ? 1 : 0;
+        this.currentIndex = this.loop ? 0 : 1;
         this.isDragging = false;
 
         // 슬라이드 추가
@@ -61,6 +61,7 @@ export class CustomSlider {
 
     updateSlidePosition() {
         this.track.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+        
         this.updatePagination();
     }
 

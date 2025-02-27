@@ -1,7 +1,6 @@
 .side-content {
   display: flex;
-  flex-direction: column; /* 세로 정렬 */
-  width: 206px;
+  flex-direction: column;
   height: 621px;
   gap: 16px;
 }
@@ -11,19 +10,19 @@
 .quick-content {
   width: 206px;
   border-radius: 20px;
-  border: 2px solid #ccc; /* ✅ 콘텐츠 구분 */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* ✅ 입체적인 느낌 추가 */
 }
 
 /* ✅ result-content 스타일 */
 .result-content {
-  height: 182px; /* ✅ 고정된 크기 */
-  display: flex; /* ✅ 내부 콘텐츠 정렬 */
-  background: #00b3b3;
+  height: 206px; 
+  display: flex;
+  position:relative;
+  overflow:hidden;
+  background: #005f99;
   color: white;
   text-align: center;
-  overflow: hidden; /* ✅ 내부 콘텐츠 넘칠 경우 숨김 */
 }
+
 
 /* 슬라이더 컨테이너 (사이드 콘텐츠 영역) */
 .slider-container {
@@ -37,6 +36,16 @@
   display: flex;
   transition: transform 0.4s ease;
 }
+.result-slide {
+  padding: 0px;
+  margin:0px;
+}
+.result-content h1  {
+  margin: 5px;
+}
+.result-text{
+  text-size:20px;
+}
 
 /* 개별 슬라이드 */
 .slide {
@@ -44,15 +53,13 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 10px;
 }
 
 /* 페이지네이션 컨테이너 */
 .pagination {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -75,11 +82,12 @@
   background: #2F2F2F!important;
   transform: scale(1.2);
 }
+
 //신간도서 슬라이드 
 .book-content {
   background: #2F2F2F !important; /* ✅ 배경색 변경 (기본 흰색에서 연한 회색으로) */
   width: 206px;
-  height: 307px; /* ✅ 크기 고정 */
+  height: 259px; /* ✅ 크기 고정 */
   display: flex;
   flex-direction: column;
   align-items: center;

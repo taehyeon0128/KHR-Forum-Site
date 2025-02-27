@@ -1,7 +1,7 @@
 import { initResultSlider } from './resultSlider.js';
-import { initBookSlider } from './bookSlider.js';
+import { initInsightSlider } from './insightSlider.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initResultSlider();
-    initBookSlider();
+    initInsightSlider();
 });
