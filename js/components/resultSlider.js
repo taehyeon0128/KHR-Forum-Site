@@ -1,43 +1,33 @@
-import { CustomSlider } from "../modules/slider.js";
-
 export function initResultSlider() {
-  const resultSlider = new CustomSlider(".result-content", {
-    loop: true,
-    pagination: true,
-    draggable: true,
-    autoSlide: true,
-    interval: 8000,
-    renderSlide: (data) => {
-      const slide = document.createElement("div");
-      slide.classList.add("result-slide");
-      slide.style.background = data.background;
-      slide.innerHTML = `
-                <span>${data.title}</span>
-                <h1>${data.description}</h1>
-                <p>${data.quick}</p>
-            `;
-      if (data.link) {
-        slide.addEventListener("click", () => {
-          window.open(data.link, "_blank");
-        });
-      }
-      return slide;
-    },
-    data: [
-      {
-        title: "KHR 포럼의 누적 고객 수",
-        description: "10,000명 달성!",
-        quick: " ",
-        background: "#005f99",
-      },
-      {
-        title: "ChatGPT HR 챗봇",
-        description: "GPTs 에릭",
-        quick: "바로가기",
-        background: "#00b3b3",
-        link: "https://blog.naver.com/yourBlog",
-      },
-    ],
+  const slides = document.querySelectorAll(".result-slide");
+  const dots = document.querySelectorAll(".result-pagination .dot");
+  let currentIndex = 0;
+  let autoSlideInterval;
+
+  function updateSlide(index) {
+      slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+          dots[i].classList.toggle("active", i === index);
+      });
+  }
+
+  function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          updateSlide(currentIndex);
+      }, 8000);
+  }
+
+  dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+          currentIndex = index;
+          updateSlide(currentIndex);
+          resetAutoSlide();
+      });
   });
-  resultSlider.init();
+
+  // ✅ 처음 실행 시 자동 슬라이드 시작
+  resetAutoSlide();
+  updateSlide(0); // 초기 배경 적용
 }

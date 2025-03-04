@@ -15,7 +15,7 @@
 /* 슬라이드 트랙: 슬라이드들이 일렬로 배치됨 */
 .slider-track {
   display: flex;
-  transition: transform 0.4s ease;
+  transition: transform 1s ease;
 }
 
 /* 개별 슬라이드 */
@@ -27,7 +27,6 @@
   flex-direction: column; box-sizing: border-box;
   padding: 10px;
 }
-
 
 /* 페이지네이션 컨테이너 */
 .pagination {
@@ -56,7 +55,6 @@
   transform: scale(1.2);
 }
 /*사이드 콘텐츠 내부*/
-
 .result-content,
 .insight-content,
 .quick-content {
@@ -64,27 +62,68 @@
   overflow:hidden;
   border-radius: 20px;
 }
-
-/* ✅ result-content 스타일 */
 .result-content {
-  height: 206px; 
-  display: flex;
-  position:relative;
-  overflow:hidden;
-  background: linear-gradient(to right, #005f99, #00b3b3);
+  position: relative;
+  height: 206px;
   color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.result-slide {
+
+.result-slider {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content:center;
-  padding: 10px;
-  border-radius: 20px; /* ✅ 슬라이드 개별 요소에도 border-radius 적용 */
-  overflow: hidden; /* ✅ 불필요한 요소 잘림 방지 */
+  transition: transform 1s ease-in-out;
 }
+
+.result-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0; /* 기본적으로 투명 */
+  transition: opacity 0.8s ease-in-out; /* ✅ 투명도 전환 애니메이션 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ✅ 현재 활성화된 슬라이드 */
+.result-slide.active {
+  opacity: 1;
+}
+
+.result-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.result-pagination .dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.result-pagination .dot.active {
+  background: white;
+  transform: scale(1.2);
+}
+
 
 .insight-content {
   background-color: #F3F3F3;
@@ -156,7 +195,7 @@
 /* ✅ quick-content 스타일 */
 .quick-content {
   width: 206px;
-  height: 124px;
+  height: 116px;
   border-radius: 20px;
   border: 2px solid #ccc;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);

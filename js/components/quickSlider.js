@@ -21,9 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlidePosition();
     });
 
-    // 자동 슬라이드 기능 (선택 사항)
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateSlidePosition();
-    }, 5000);
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlide(currentIndex);
+        }, 8000);
+    }
 });
