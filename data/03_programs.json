@@ -1,0 +1,190 @@
+[
+  {
+    "type": "khr",
+    "title": "리더십 전략 워크샵",
+    "category": ["심리학", "자기계발"],
+    "summary": "기업 리더를 위한 전략적 리더십 향상 과정",
+    "time": "14:00 - 18:00",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/khr1"
+  },{
+    "type": "khr",
+    "title": "리더십 전략 워크샵",
+    "category": ["심리학", "자기계발"],
+    "summary": "기업 리더를 위한 전략적 리더십 향상 과정",
+    "time": "14:00 - 18:00",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/khr1"
+  },
+  {
+    "type": "khr",
+    "title": "리더십 전략 워크샵",
+    "category": ["심리학", "자기계발"],
+    "summary": "기업 리더를 위한 전략적 리더십 향상 과정",
+    "time": "14:00 - 18:00",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/khr1"
+  },
+
+  {
+    "type": "khr",
+    "title": "비즈니스 혁신 프로그램",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 모델 혁신을 위한 실전 전략",
+    "time": "10:00 - 16:00",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/khr2"
+  },
+  {
+    "type": "khr",
+    "title": "비즈니스 혁신 프로그램",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 모델 혁신을 위한 실전 전략",
+    "time": "10:00 - 16:00",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/khr2"
+  },
+  {
+    "type": "khr",
+    "title": "비즈니스 혁신 프로그램",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 모델 혁신을 위한 실전 전략",
+    "time": "10:00 - 16:00",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/khr2"
+  },
+  {
+    "type": "khr",
+    "title": "비즈니스 혁신 프로그램",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 모델 혁신을 위한 실전 전략",
+    "time": "10:00 - 16:00",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/khr2"
+  },
+  {
+    "type": "open",
+    "title": "데이터 분석 입문",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 데이터를 활용한 인사이트 도출 방법",
+    "date": "2024-07-10",
+    "time": "09:00 - 12:00",
+    "cost": "무료",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/open1"
+  },
+  {
+    "type": "open",
+    "title": "데이터 분석 입문",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 데이터를 활용한 인사이트 도출 방법",
+    "date": "2024-07-10",
+    "time": "09:00 - 12:00",
+    "cost": "무료",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/open1"
+  }
+  ,
+  {
+    "type": "open",
+    "title": "데이터 분석 입문",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 데이터를 활용한 인사이트 도출 방법",
+    "date": "2024-07-10",
+    "time": "09:00 - 12:00",
+    "cost": "무료",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/open1"
+  },{
+    "type": "open",
+    "title": "데이터 분석 입문",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 데이터를 활용한 인사이트 도출 방법",
+    "date": "2024-07-10",
+    "time": "09:00 - 12:00",
+    "cost": "무료",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/open1"
+  },
+  {
+    "type": "open",
+    "title": "데이터 분석 입문",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 데이터를 활용한 인사이트 도출 방법",
+    "date": "2024-07-10",
+    "time": "09:00 - 12:00",
+    "cost": "무료",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/open1"
+  }
+  ,
+  {
+    "type": "open",
+    "title": "데이터 분석 입문",
+    "category": ["심리학", "자기계발"],
+    "summary": "비즈니스 데이터를 활용한 인사이트 도출 방법",
+    "date": "2024-07-10",
+    "time": "09:00 - 12:00",
+    "cost": "무료",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/open1"
+  }
+  ,
+  {
+    "type": "coauthor",
+    "title": "HR 전문가 공저 참여",
+    "category": ["심리학", "자기계발"],
+    "summary": "기업 HR 전문가와 함께하는 공동 저술 프로젝트",
+    "date": "2024-08-15",
+    "time": "13:00 - 17:00",
+    "cost": "50,000원",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/coauthor1"
+  },
+  {
+    "type": "coauthor",
+    "title": "HR 전문가 공저 참여",
+    "category": ["심리학", "자기계발"],
+    "summary": "기업 HR 전문가와 함께하는 공동 저술 프로젝트",
+    "date": "2024-08-15",
+    "time": "13:00 - 17:00",
+    "cost": "50,000원",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/coauthor1"
+  },
+  {
+    "type": "coauthor",
+    "title": "HR 전문가 공저 참여",
+    "category": ["심리학", "자기계발"],
+    "summary": "기업 HR 전문가와 함께하는 공동 저술 프로젝트",
+    "date": "2024-08-15",
+    "time": "13:00 - 17:00",
+    "cost": "50,000원",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/coauthor1"
+  }
+  ,
+  {
+    "type": "coauthor",
+    "title": "HR 전문가 공저 참여",
+    "category": ["심리학", "자기계발"],
+    "summary": "기업 HR 전문가와 함께하는 공동 저술 프로젝트",
+    "date": "2024-08-15",
+    "time": "13:00 - 17:00",
+    "cost": "50,000원",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/coauthor1"
+  }
+  ,
+  {
+    "type": "coauthor",
+    "title": "HR 전문가 공저 참여",
+    "category": ["심리학", "자기계발"],
+    "summary": "기업 HR 전문가와 함께하는 공동 저술 프로젝트",
+    "date": "2024-08-15",
+    "time": "13:00 - 17:00",
+    "cost": "50,000원",
+    "image": "assets/images/programs/KHR_open_program0.jpg",
+    "link": "https://example.com/coauthor1"
+  }
+]

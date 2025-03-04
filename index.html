@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="css/main/02_side_section.css" />
     <link rel="stylesheet" href="css/main/03_banner_section.css" />
     <link rel="stylesheet" href="css/main/04_program_sectioin.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main/05_client_logo_section.css" />
 
     <script src="js/modules/slider.js" type="module"></script>
     <script src="js/components/side_contents.js" type="module"></script>
     <script src="js/components/quickSlider.js" type="module"></script>
     <script src="js/components/bannerSlider.js" type="module"></script>
     <script src="js/components/programSlider.js" type="module"></script>
+    <script src="js/components/clientLogoSlider.js" type="module"></script>
   </head>
   <body>
     <!-- 네비게이션 바 -->
@@ -95,14 +96,18 @@
         <!-- 업적 슬라이드 -->
         <div class="result-content">
           <div class="result-slider">
-            <div class="result-slide"  style="background-color:#005f99;">
+            <div class="result-slide" style="background-color: #005f99">
               <span>KHR 포럼의 누적 고객 수</span>
               <h1>10,000명 달성!</h1>
             </div>
-            <div class="result-slide" style="background-color:#00b3b3;">
+            <div class="result-slide" style="background-color: #00b3b3">
               <span>ChatGPT HR 챗봇</span>
               <h1>GPTs 에릭</h1>
-              <p><a href="https://blog.naver.com/yourBlog" target="_blank">바로가기</a></p>
+              <p>
+                <a href="https://blog.naver.com/yourBlog" target="_blank"
+                  >바로가기</a
+                >
+              </p>
             </div>
           </div>
           <div class="result-pagination">
@@ -110,24 +115,24 @@
             <span class="dot" data-index="1"></span>
           </div>
         </div>
-        
+
         <!-- 인사이트 슬라이드 -->
         <div class="insight-content slider-container">
           <!-- ✅ 슬라이드가 여기에 동적으로 추가됨 -->
         </div>
-        <!-- 바로가기 버튼 박스 (quick-content) -->
+        <!-- 바로가기 버튼 슬라이드 -->
         <div class="quick-content slider-container">
           <div class="slider-track">
             <!-- 첫 번째 슬라이드 -->
-            <div class="slide">
+            <div class="slide" style="background: #005f99">
               <a href="https://example.com/contact" class="quick-slide-link">
                 <p>문의하기</p>
               </a>
             </div>
             <!-- 두 번째 슬라이드 -->
-            <div class="slide">
+            <div class="slide" style="background: #ff9800">
               <a href="https://blog.naver.com/art_hr" class="quick-slide-link">
-                <p>한국HR포럼<br>블로그</p>
+                <p>한국HR포럼<br />블로그</p>
               </a>
             </div>
           </div>
@@ -155,9 +160,33 @@
       </div>
     </section>
 
-    <!-- 프로그램 섹션 -->
+    <!-- 프로그램 슬라이드 섹션 -->
     <section class="program-slider-container">
-      <!-- JavaScript에서 필드별 프로그램 섹션이 동적으로 추가됨 -->
+      <h2>KHR 프로그램</h2>
+      <div class="program-scroll-container" id="khr-programs">
+        <div class="program-track"></div>
+      </div>
+    </section>
+
+    <section class="program-slider-container">
+      <h2>공개과정</h2>
+      <div class="program-scroll-container" id="open-programs">
+        <div class="program-track"></div>
+      </div>
+    </section>
+
+    <section class="program-slider-container">
+      <h2>HR 공저</h2>
+      <div class="program-scroll-container" id="coauthor-programs">
+        <div class="program-track"></div>
+      </div>
+    </section>
+
+    <!-- 고객사 로고 슬라이드 섹션 -->
+    <section class="client-logo-slider">
+      <div class="client-logo-container">
+        <div class="client-logo-track"></div>
+      </div>
     </section>
 
     <footer class="footer">

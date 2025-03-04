@@ -1,0 +1,33 @@
+.client-logo-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .client-logo-track {
+    display: flex;
+    gap: 30px;
+    animation: scrollLogo 10s linear infinite;
+  }
+  
+  .client-logo {
+    width: 150px;
+    height: auto;
+    max-height: 75px;
+    object-fit: contain;
+  }
+  
+  
+  @keyframes scrollLogo {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
