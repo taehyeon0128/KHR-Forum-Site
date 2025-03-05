@@ -1,0 +1,47 @@
+[
+    {
+        "title": "HR 인공지능 혁신",
+        "image": "assets/images/books/book_esg_revolution_img.jpg",
+        "category": ["인공지능", "HR"],
+        "description": "AI 기술을 활용한 HR 혁신 전략을 소개하는 책입니다.",
+        "writer": ["홍길동", "김철수"],
+        "affiliation": ["KHR 포럼", "AI 연구소"],
+        "link": "#"
+    },
+    {
+        "title": "조직 문화 변화",
+        "image": "assets/images/books/book_esg_revolution_img.jpg",
+        "category": ["조직관리", "경영"],
+        "description": "조직 문화 변화의 원리와 실행 전략을 다룬 책입니다.",
+        "writer": ["이영희"],
+        "affiliation": ["HR 컨설팅 그룹"],
+        "link": "#"
+    },
+    {
+        "title": "데이터 기반 HR",
+        "image": "assets/images/books/book_esg_revolution_img.jpg",
+        "category": ["데이터 분석", "HR"],
+        "description": "데이터 기반 HR 의사결정 및 실전 사례를 제공합니다.",
+        "writer": ["박민준", "정윤아"],
+        "affiliation": ["데이터랩", "HR 포럼"],
+        "link": "#"
+    },
+    {
+        "title": "데이터 기반 HR",
+        "image": "assets/images/books/book_esg_revolution_img.jpg",
+        "category": ["데이터 분석", "HR"],
+        "description": "데이터 기반 HR 의사결정 및 실전 사례를 제공합니다.",
+        "writer": ["박민준", "정윤아"],
+        "affiliation": ["데이터랩", "HR 포럼"],
+        "link": "#"
+    },
+    {
+        "title": "데이터 기반 HR",
+        "image": "assets/images/books/book_esg_revolution_img.jpg",
+        "category": ["데이터 분석", "HR"],
+        "description": "데이터 기반 HR 의사결정 및 실전 사례를 제공합니다.",
+        "writer": ["박민준", "정윤아"],
+        "affiliation": ["데이터랩", "HR 포럼"],
+        "link": "#"
+    }
+]

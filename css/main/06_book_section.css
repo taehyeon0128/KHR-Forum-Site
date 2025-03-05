@@ -1,0 +1,113 @@
+.book-slider {
+    width: 1316px;
+    margin: auto;
+}
+
+.book-slider-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 10px;
+}
+
+.book-scroll-container {
+    overflow-x: auto;
+    white-space: nowrap; /* ✅ 줄바꿈 방지 */
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+/* ✅ 웹킷 브라우저(크롬, 사파리)용 스크롤바 커스텀 */
+.book-scroll-container::-webkit-scrollbar {
+    height: 6px;
+    background: #ffffff;
+    width: 50px;
+}
+
+/* ✅ 스크롤 트랙 */
+.book-scroll-container::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 2px;
+}
+
+/* ✅ 스크롤 핸들 */
+.book-scroll-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 50px;
+    width: 10px;
+}
+
+.book-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+.book-track {
+    display: flex;
+    gap: 16px;
+    min-width: max-content; /* ✅ 가로 스크롤 유지 */
+}
+
+.book-card {
+    display: flex;
+    width: 400px;
+    height: 285px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    flex-shrink: 0; /* ✅ 크기 유지 */
+    cursor: pointer;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ 책 이미지 (왼쪽) */
+.book-image {
+    width: 190px;
+    height: 285px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ✅ 책 정보 (오른쪽) */
+.book-info {
+    width: 210px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ✅ 왼쪽 정렬 */
+    justify-content: flex-start; /* ✅ 상단 정렬 */
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.book-category {
+    display: flex;
+    gap: 6px;
+    font-size: 12px;
+    color: gray;
+}
+
+.book-category div {
+    background: #eef;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.book-description {
+    font-size: 14px;
+    color: #555;
+    white-space: normal;
+}
+
+.book-writers span {
+    font-size: 12px;
+    color: #777;
+}
