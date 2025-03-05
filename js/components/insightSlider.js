@@ -11,7 +11,7 @@ export async function initInsightSlider() {
             pagination: true,
             draggable: true,
             autoSlide: true,
-            interval: 5000,
+            interval: 7000,
             renderSlide: (data) => {
                 const slide = document.createElement('div');
                 slide.classList.add('insight-slide');

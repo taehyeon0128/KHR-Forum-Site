@@ -1,24 +1,19 @@
 [
   {
-    "topic": "책 제목 1",
-    "description": "책에 대한 설명",
-    "category": "#소설",
-    "link": "#"
+    "topic": "2월 신간 도서",
+    "description": "변화속 흔들리지 않는 역량 <b>\"Who am I - 인간의 정체성과 변화 적응\"</b>",
+    "category": "#AI적응력 #성과창출",
+    "link": "https://product.kyobobook.co.kr/detail/S000215690279"
   },
   {
-    "topic": "책 제목 1",
-    "description": "책에 대한 설명",
-    "category": "#소설",
-    "link": "#"
+    "topic": "Gen AI 도서",
+    "description": "지속 성장의 새로운 기회 <b>\"Chat GPT*HR\"</b>",
+    "category": "#AI적용 #인재확보",
+    "link": " https://product.kyobobook.co.kr/detail/S000203272735"
   },{
-    "topic": "책 제목 1",
-    "description": "책에 대한 설명",
-    "category": "#소설",
-    "link": "#"
-  },{
-    "topic": "책 제목 1",
-    "description": "책에 대한 설명",
-    "category": "#소설",
-    "link": "#"
+    "topic": "HR 혁신 도서",
+    "description": "성장을 위한 실질적 해법 <b>\"HR 레볼루션\"</b>",
+    "category": "#지속가능성 #체계구축",
+    "link": "https://product.kyobobook.co.kr/detail/S000212215803"
   }
 ]
