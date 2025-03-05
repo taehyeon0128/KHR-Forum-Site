@@ -1,17 +1,28 @@
 .client-logo-container {
     width: 100%;
     overflow: hidden;
-    white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 0;
+    position: relative;
   }
   
   .client-logo-track {
     display: flex;
     gap: 30px;
-    animation: scrollLogo 10s linear infinite;
+    animation: scrollLogo 15s linear infinite;
+    width: max-content; /* ✅ 로고 개수에 맞게 크기 자동 조정 */
+  }
+  
+  /* ✅ 무한 스크롤 애니메이션 */
+  @keyframes scrollLogo {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%); /* ✅ 로고 개수에 따라 조정 */
+    }
   }
   
   .client-logo {
@@ -19,15 +30,5 @@
     height: auto;
     max-height: 75px;
     object-fit: contain;
-  }
-  
-  
-  @keyframes scrollLogo {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
   }
   

@@ -96,6 +96,12 @@
   left: 0;
 }
 
+/* 기본적으로 클릭 불가능 설정 */
+.result-slide:not(.active) {
+  pointer-events: none;
+}
+
+
 /* ✅ 현재 활성화된 슬라이드 */
 .result-slide.active {
   opacity: 1;
