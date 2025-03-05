@@ -1,4 +1,5 @@
 .program-slider-container {
+  position: relative;
   width: 1316px;
   margin: 0 auto;
   margin-bottom:30px;
@@ -12,6 +13,44 @@
   font-size: 38px;
   margin-top:0px;
   margin-bottom: 16px;
+}
+
+.program-folder {
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 1050px;
+  height: 70px;
+  background: white;
+  border-radius: 0 0 0 20px;
+}
+
+/* ✅ 부채꼴 모양 만들기 (왼쪽 위, 오른쪽 아래) */
+.program-folder::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 0 20px 0 0;
+  background: transparent; /* ✅ 안쪽을 투명하게 */
+  box-shadow: 10px -10px 0 10px white; /* ✅ 바깥쪽을 흰색으로 */
+}
+
+/* ✅ 왼쪽 위 부채꼴 */
+.program-folder::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 0 20px 0 0;
+  background: transparent; /* ✅ 안쪽을 투명하게 */
+  box-shadow: 10px -10px 0 10px white; /* ✅ 바깥쪽을 흰색으로 */
 }
 
 .program-scroll-container {
