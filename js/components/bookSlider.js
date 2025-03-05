@@ -42,6 +42,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                 categoryDiv.appendChild(catDiv);
             });
 
+            // ✅ 출간 날짜 표시
+            const date = document.createElement("p");
+            date.classList.add("book-date");
+            date.textContent = `📅 출간일: ${book.date}`;
+
             // ✅ 책 설명 (줄 바꿈 허용)
             const description = document.createElement("p");
             description.classList.add("book-description");
@@ -66,6 +71,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             // ✅ 요소 추가
             infoDiv.appendChild(title);
             infoDiv.appendChild(categoryDiv);
+            infoDiv.appendChild(date);  // 출간 날짜 추가
             infoDiv.appendChild(description);
             infoDiv.appendChild(writerDiv);
             card.appendChild(imageDiv);
