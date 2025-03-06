@@ -41,12 +41,12 @@
     display: block;
     width: 30px;
     height: 30px;
-    background: url('/assets/images/nav/Sitemap_icon.png') no-repeat center/contain;
+    background: url('../assets/images/nav/Sitemap_icon.png') no-repeat center/contain;
     transition: background 0.3s;
   }
   
   .nav-sitemap-icon:hover {
-    background: url('/assets/images/nav/Sitemap_icon_hover.png') no-repeat center/contain;
+    background: url('../assets/images/nav/Sitemap_icon_hover.png') no-repeat center/contain;
   }
   
   
