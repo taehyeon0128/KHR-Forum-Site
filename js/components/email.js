@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    emailjs.init("YOUR_EMAILJS_USER_ID"); // ✅ EmailJS 사용자 ID 입력
+    emailjs.init("template_ooc5mu5"); // ✅ EmailJS 사용자 ID 입력
 
     document.getElementById("contactForm").addEventListener("submit", function(event) {
         event.preventDefault();
