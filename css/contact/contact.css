@@ -4,14 +4,14 @@
     width: 1316px;
     margin: 60px auto;
     padding: 40px;
-    background: #f8f9fa;
+    background: #ffffff;
     border-radius: 10px;
 }
 
 /* ✅ 제목(문의하기 글자)은 따로 정렬 */
 .contact-title {
     text-align: left;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px; /* ✅ 양식과 지도 사이 간격 */
-    height: 621px; /* ✅ 전체 높이 설정 */
+    height: 550px; /* ✅ 전체 높이 설정 */
 }
 
 /* ✅ 문의 양식 */
@@ -32,6 +32,16 @@
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     height: 100%; /* ✅ 높이 621px 유지 */
+}
+.row-box{
+    width:97%;
+    display:flex;
+    flex-decoration:row;
+    gap:20px;
+    
+}
+.a,.b{
+    width:95%;
 }
 
 .contact-form form {
@@ -47,7 +57,7 @@
 
 .contact-form input, 
 .contact-form textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -55,7 +65,7 @@
 }
 
 .contact-form textarea {
-    height: 200px; /* ✅ 입력 칸 높이 조정 */
+    height: 100px; /* ✅ 입력 칸 높이 조정 */
 }
 
 .contact-form button {
@@ -71,19 +81,63 @@
     background: #0056b3;
 }
 
+/* ✅ 문의하기 아래 소셜 아이콘 버튼 */
+.contact-social {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* ✅ 소셜 아이콘 스타일 */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+/* ✅ 버튼별 색상 */
+.email { background: #007bff; }  /* 파란색 */
+.kakao { background: #fee500; color: black; }  /* 카카오 노랑 */
+.instagram { background: linear-gradient(30deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);} /* 인스타그램 */
+.youtube { background: #FF0000; }  /* 유튜브 빨강 */
+
+/* ✅ 호버 효과 */
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
 /* ✅ 연수원 지도 */
 .contact-map {
     flex: 1; 
     padding: 20px;
+    font-size:14px;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    height: 621px; /* ✅ 높이 621px 유지 */
+    height: 550px; /* ✅ 높이 621px 유지 */
+}
+.contact-map h3{
+    font-size:20px;
+    margin:0;
+}
+.contact-map p>a{
+    
+
 }
 
 .contact-map iframe {
     width: 100%;
-    height: 500px;
+    height: 86%;
     border-radius: 10px;
     border: none;
 }
